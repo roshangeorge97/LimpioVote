@@ -25,7 +25,7 @@ import { TailSpin } from "react-loader-spinner"
           <p className="font-bold mt-5 text-3xl text-black">Deadline is over</p>
         )}
         {/* Vote To */}
-        <div className="flex  w-1/3 justify-between items-center mt-5">
+        <div className="flex  w-1/3 max-sm:w-3/4 justify-between items-center mt-5">
           <input value={App.ID} onChange={(e) => App.setID(e.target.value)}  type={"number"} className="w-4/5 ml-6 p-3 bg-black border-2 border-white text-white border-opacity-80 bg-opacity-80 outline-none rounded-lg" placeholder="Enter Candidates ID" />
         </div>
         {/* Button */}

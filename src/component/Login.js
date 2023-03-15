@@ -25,7 +25,7 @@ const Login = () => {
     return (
         <div className='min-w-full h-4/5 flex justify-center flex-col items-center'>
             <img className='h-1/6' src='icons8-vote-64.png' /> <h1 className=' font-bold text-3xl text-white'>Welcome to LimpioVote</h1>
-            <div className='w-1/3 h-40 mt-8 bg-white bg-opacity-80 p-2 rounded-3xl shadow-lg border-opacity-40 border-4 border-black flex flex-col justify-center items-center'>
+            <div className='w-1/3 max-sm:w-3/4 h-40 mt-8 bg-white bg-opacity-80 p-2 rounded-3xl shadow-lg border-opacity-40 border-4 border-black flex flex-col justify-center items-center'>
                 <h1 className='text-black text-3xl font-medium text-center'>Login</h1>
                 {ethereum != undefined ?
                     <div onClick={LoginWallet} className='flex border-opacity-60 bg-opacity-90 text-lg font-medium border-2 border-white-800 cursor-pointer bg-black text-white mt-4 rounded-2xl justify-center items-center py-1 px-4 hover:bg-white hover:text-black'>

@@ -12,7 +12,7 @@ const Header = () => {
                 <img class="h-12 ml-2" src="icons8-vote-64.png" alt="Voting" />
                 <h1 class="font-extrabold text-3xl text-white h-18 mt-3">LimpioVote</h1>
             </div>
-            <div className="flex justify-between items-start">
+            <div className="flex justify-between items-start max-sm:mt-2 max-sm:m-2 max-sm:ml-4">
                 {/* Wallet */}
                 <div className="text-xl mr-2 font-sans border-opacity-60 border-2 border-white font-bold cursor-pointer bg-white bg-opacity-90 px-4 py-2 text-black  rounded-xl flex justify-between items-center">
                     {App.Address.slice(0, 5)}...{App.Address.slice(38)}

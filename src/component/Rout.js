@@ -6,22 +6,22 @@ const Rout = () => {
     const [route, setRoute] = useState('main');
     return (
         <div className='w-full mt-16 flex flex-col justify-center items-center'>
-            <div className='pt-8 flex justify-around text-log font-medium items-center bg-white bg-opacity-90 border-2 border-b-0 text-black border-opacity-50 border-white rounded-t-lg w-1/2'>
+            <div className='pt-4 flex justify-around text-log font-medium items-center bg-white bg-opacity-90 border-2 border-b-0 text-black border-opacity-50 border-white rounded-t-lg w-1/2 max-sm:w-3/4 max-sm:flex-col'>
                 {/* Main */}
-                <li onClick={() => setRoute('main')} className={`list-none cursor-pointer py-2 w-1/4 ${route === 'main' ? "bg-blue text-white bg-opacity-85 font-bold text-xl" : "bg-white bg-opacity-80 text-xl"} text-center rounded-lg  hover:bg-opacity-85`}>
+                <li onClick={() => setRoute('main')} className={`list-none cursor-pointer py-2 w-1/4 max-sm:w-3/4 max-sm:m-4 max-sm:mt-2 max-sm:mb-2 ${route === 'main' ? "bg-blue text-white bg-opacity-85 font-bold text-xl" : "bg-white bg-opacity-80 text-xl"} text-center rounded-lg  hover:bg-opacity-85`}>
                     Vote
                 </li>
                 {/* Candidates */}
-                <li onClick={() => setRoute('Candidates')} className={`list-none cursor-pointer py-2 w-1/4 ${route === 'Candidates' ? "bg-blue text-white bg-opacity-85 font-bold text-xl" : "bg-white bg-opacity-80 text-xl"} text-center rounded-lg  hover:bg-opacity-85`}>
+                <li onClick={() => setRoute('Candidates')} className={`list-none cursor-pointer py-2 w-1/4 max-sm:w-3/4 max-sm:m- max-sm:mt-2 max-sm:mb-2 ${route === 'Candidates' ? "bg-blue text-white bg-opacity-85 font-bold text-xl" : "bg-white bg-opacity-80 text-xl"} text-center rounded-lg  hover:bg-opacity-85`}>
                     Candidates
                 </li>
                 {/* chiarperson */}
-                <li onClick={() => setRoute('Chairperson')} className={`list-none cursor-pointer py-2 w-1/4 ${route === 'Chairperson' ? "bg-blue text-white bg-opacity-85 font-bold text-xl" : "bg-white bg-opacity-80 text-xl"} text-center rounded-lg hover:bg-opacity-85`}>
+                <li onClick={() => setRoute('Chairperson')} className={`list-none cursor-pointer py-2 w-1/4 max-sm:w-3/4 max-sm:m-4 max-sm:mt-2 max-sm:mb-2 ${route === 'Chairperson' ? "bg-blue text-white bg-opacity-85 font-bold text-xl" : "bg-white bg-opacity-80 text-xl"} text-center rounded-lg hover:bg-opacity-85`}>
                     Chairperson
                 </li>
             </div>
             {/* Screen */}
-            <div className='bg-white bg-opacity-90 pb-5 overflow-y-auto border-2 border-t-0 shadow-lg border-opacity-50 border-white rounded-b-lg w-1/2'>
+            <div className='mb-8 bg-white bg-opacity-90 pb-5 overflow-y-auto border-2 border-t-0 shadow-lg border-opacity-50 border-white rounded-b-lg w-1/2 max-sm:w-3/4'>
                 {(() => {
                     if (route === 'main') {
                         return <Main />

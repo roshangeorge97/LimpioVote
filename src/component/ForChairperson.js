@@ -44,11 +44,11 @@ const ForChairperson = () => {
     <div className="flex flex-col justify-center items-center text-black">
 
       {/* Vote To */}
-      <div className="flex w-1/2 justify-between items-center mt-5">
+      <div className="flex w-1/2 max-sm:w-80 max-sm:ml-4 justify-between items-center mt-5">
         <input onChange={(e) => App.setcandidatenames(e.target.value)} value={App.candidatenames} type={"text"} className="w-4/5 ml-6 p-3 bg-black border-2 border-white text-white border-opacity-80 bg-opacity-80 outline-none rounded-lg" placeholder="Candidates names with comma "/>
       </div>
       {/* {deadline} */}
-      <div className="flex  w-1/2 justify-between items-center mt-5">
+      <div className="flex  w-1/2 max-sm:w-64 max-sm:m-2  justify-between items-center mt-5">
         <input onChange={(e) => App.setDeadline(e.target.value)} value={App.deadline} type={"number"} className="w-4/5 ml-6 p-3 bg-black border-2 border-white text-white border-opacity-80 bg-opacity-80 outline-none rounded-lg" placeholder="deadline in hours" />
       </div>
       {/* Create Candidates */}
@@ -61,14 +61,14 @@ const ForChairperson = () => {
           />
         </div>
         :
-        <div onClick={CreateCandidates} className="flex mt-4 w-1/2 text-white cursor-pointer justify-center items-center p-2 bg-blue from-gray-900 to-gray-700 hover:from-gray-600 hover:to-gray-900 border-2 border-white border-opacity-80 text-xl font-medium rounded-lg">
+        <div onClick={CreateCandidates} className="flex mt-4 w-1/2 max-sm:w-64  text-white cursor-pointer justify-center items-center p-2 bg-blue from-gray-900 to-gray-700 hover:from-gray-600 hover:to-gray-900 border-2 border-white border-opacity-80 text-xl font-medium rounded-lg">
           Create Candidates
         </div>
       }
       {/* clear data */}
-      <div className="flex w-1/2 ml-10 text-xl justify-between items-center mt-4 font-bold">Click below button to clear data</div>
+      <div className="flex w-1/2 max-sm:w-64 ml-10 max-sm:ml-2 text-xl justify-between items-center mt-4 font-bold">Click below button to clear data</div>
       {TxLoading2 ?
-        <div className="flex mt-4 w-1/2 text-white cursor-pointer justify-center items-center p-2 bg-blue from-gray-900 to-gray-700 hover:from-gray-600 hover:to-gray-900 border-2 border-blue-900 border-opacity-80 text-xl font-medium rounded-lg">
+        <div className="flex mt-4 w-1/2 max-sm:w-64  text-white cursor-pointer justify-center items-center p-2 bg-blue from-gray-900 to-gray-700 hover:from-gray-600 hover:to-gray-900 border-2 border-blue-900 border-opacity-80 text-xl font-medium rounded-lg">
           <TailSpin
             width={30}
             height={46}
