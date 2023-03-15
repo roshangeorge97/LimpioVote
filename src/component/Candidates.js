@@ -23,7 +23,7 @@ const Candidates = () => {
               <div className="flex w-full items-center justify-center rounded-t-lg">
                 <div className="w-full py-2 px-2">
                   <p  className="text-xl font-mono"> candidaID: {id}</p>
-                  <p  className="text-xl font-mono">candidatenames: {e.name}</p>
+                  <p  className="text-xl font-mono">candidatename: {e.name}</p>
                   <p  className="text-xl font-mono">voteCount: {e.voteCount.toString()}</p>
                 </div>
               </div>
