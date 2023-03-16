@@ -1,6 +1,6 @@
   <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/icons8-vote-64.png" alt="Logo" width="80" height="80">
   </a>
 <h1 align="center">LimpioVote</h1>
 
@@ -15,11 +15,11 @@
 
 ## Screenshots
 
-![Home Page](/screenshots/1.png "Home Page")
+![Home Page](/screenshots/Screenshot(235).png "Home Page")
 
-![](/screenshots/2.png)
+![](/screenshots/Screenshot(236).png)
 
-![](/screenshots/3.png)
+![](/screenshots/Screenshot(237).png)
 
 
 <!-- GETTING STARTED -->
