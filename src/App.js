@@ -8,7 +8,7 @@ import Election from "./contract/Election.json"
 const AppState = createContext();
 function App() {
   const { ethereum } = window;
-  const ElectionContractAddress = "0x2389bF9D3b224F96e419Bca22fE38B86a535B681";
+  const ElectionContractAddress = "0xeC0c0b3EDEF7dF515Bc3954d7B67735347587247";
   const provider = new ethers.providers.Web3Provider(window.ethereum);
   const signer = provider.getSigner();
   const ElectionContract = new ethers.Contract(ElectionContractAddress, Election.output.abi, signer);
